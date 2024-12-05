@@ -1,0 +1,228 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(to right, #007bff, #00aaff);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #333;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Services */
+.service-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.service-slide {
+    min-width: 300px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-slide:hover {
+    transform: scale(1.05);
+}
+
+/* Stats */
+.stats {
+    background: #f9f9f9;
+}
+
+.stats-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.stat {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+/* FAQ */
+.faq-item {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    max-width: 600px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background: #e0e0e0;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+/* 3D Effect on Hover */
+.service-slide {
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+
+.service-slide:hover {
+    transform: rotateY(15deg);
+}
+
+/* Animated scroll-in effect */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Button hover animation */
+.btn-primary {
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
